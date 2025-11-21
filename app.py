@@ -12,5 +12,11 @@ def main():
     print(q)
     return(render_template("main.html"))
 
+@app.route("/dbs",methods=["GET","POST"])
+def dbs():
+    q = request.form.get("q")
+    print(q)
+    return(render_template("dbs.html"))
+
 if __name__ == "__main__":
     app.run()
