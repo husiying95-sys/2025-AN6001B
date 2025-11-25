@@ -1,7 +1,10 @@
 from flask import Flask,render_template,request
 import joblib
 
-app = Flask(__name__)
+app = Flask(__name__)  
+# 固定写法，初始化你的 Flask App
+# 创建整个 Web 应用，所有 route 都会登记在这个 app 上。
+# Flask = 一个 Python 写网页（后端）的工具包，里面包含一堆处理 URL、请求、返回 HTML 和 JSON 的函数。
 
 @app.route("/",methods=["GET","POST"])
 def index():
